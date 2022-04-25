@@ -1,3 +1,20 @@
+@keyframes slide-out-elliptic-top-bck {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +62,11 @@ footer p {
   width: 240px;
   margin: 16px;
 }
+
+.delete-animation:active{
+  animation: slide-out-elliptic-top-bck 0.9s ease-in both;
+}
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;

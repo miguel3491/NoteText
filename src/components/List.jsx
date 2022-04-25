@@ -7,8 +7,9 @@ function List(props){
     function handleClick(){
         props.delete(props.id)
     }
+
     return(
-        <div className="note">
+        <div className="note delete-animation">
             <p>{props.Title}</p>
             <Fab onClick = {handleClick}><DeleteIcon/></Fab>
         </div>
